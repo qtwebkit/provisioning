@@ -5,6 +5,8 @@ After=network.target
 [Service]
 Type=simple
 ExecStart=ruby /home/annulen/qwkbot/launch_here.rb /home/annulen/.rbot
+Restart=on-failure
+RestartSec=5s
 
 [Install]
 WantedBy=default.target
