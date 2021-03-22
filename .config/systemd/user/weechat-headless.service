@@ -1,0 +1,12 @@
+# https://wiki.archlinux.org/index.php/WeeChat#Headless_Method
+
+[Unit]
+Description=A headless WeeChat client and relay service 
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/weechat-headless
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,9 @@
+---
+core.db: tc
+core.reply_with_nick: true
+server.list:
+- irc.freenode.net
+irc.nick: qwkbot
+irc.user: qwkbot
+irc.join_channels:
+- "#qtwebkit"

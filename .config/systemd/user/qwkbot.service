@@ -1,0 +1,10 @@
+[Unit]
+Description=IRC bot (modified rbot)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=ruby /home/annulen/qwkbot/launch_here.rb /home/annulen/.rbot
+
+[Install]
+WantedBy=default.target
